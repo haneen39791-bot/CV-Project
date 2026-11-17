@@ -29,21 +29,101 @@
 
 /* الوضع الليلي */
 [data-theme="dark"] {
-  --bg: #161b2e;
-  --bg-alt: #1f2438;
-  --text: #fdf6e3;
-  --muted: #b9c4d4;
-  --card-bg: #262b42;
-  --border: #3a425e;
-  --gold-text: #f0b450;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --bg: #090d16;         
+  --bg-alt: #0e1320;   
+  --text: #fef6e4;        
+  --muted: #94a3b8;       
+  --card-bg: #131b2e;    
+  --border: #1e293b;     
+  --gold-text: #f4d75e;    
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
-[data-theme="dark"] #about     { --accent: #ff8a5c; --accent-bright: #ef5025; --accent-soft: #3a2622; }
-[data-theme="dark"] #education { --accent: #7db4ff; --accent-bright: #285078; --accent-soft: #1e2a44; }
-[data-theme="dark"] #skills    { --accent: #7fd0e6; --accent-bright: #5fa7bf; --accent-soft: #1b3038; }
-[data-theme="dark"] #languages { --accent: #f0c860; --accent-bright: #c9a227; --accent-soft: #3a3220; }
-[data-theme="dark"] #contact   { --accent: #ff9aa8; --accent-bright: #ef5025; --accent-soft: #3a2028; }
+/* ألوان للأقسام في الوضع الليلي  */
+[data-theme="dark"] #about     { --accent: #f4d75e; --accent-bright: #ffea8a; --accent-soft: #262012; }
+[data-theme="dark"] #education { --accent: #60a5fa; --accent-bright: #93c5fd; --accent-soft: #111e38; }
+[data-theme="dark"] #skills    { --accent: #38bdf8; --accent-bright: #7dd3fc; --accent-soft: #0c2136; }
+[data-theme="dark"] #languages { --accent: #fbbf24; --accent-bright: #fcd34d; --accent-soft: #261f0c; }
+[data-theme="dark"] #contact   { --accent: #a3e635; --accent-bright: #bef264; --accent-soft: #17220e; }
+[data-theme="dark"] .hero {
+  background: 
+    linear-gradient(
+      rgba(9, 13, 22, 0.85), 
+      rgba(9, 13, 22, 0.85)
+    ),
+    url("bees.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* النص الداخلي في الوضع اليلي */
+[data-theme="dark"] .hero-text {
+  background: rgba(19, 27, 46, 0.88);
+  border-color: rgba(244, 215, 94, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .hero-text h1,
+[data-theme="dark"] .greeting,
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] .location {
+  color: #fef6e4;
+}
+
+
+/* الشريط العلوي في الوضع الليلي */
+[data-theme="dark"] .site-header {
+  background: #0e1320;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .site-header::after {
+  background: linear-gradient(
+    90deg,
+    #a3e635,
+    #60a5fa,
+    #f4d75e,
+    #fbbf24
+  );
+}
+
+/* روابط القائمة العلوية في الوضع الليلي */
+[data-theme="dark"] .nav-links a {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .nav-links a:hover,
+[data-theme="dark"] .nav-links a.active {
+  color: #f4d75e;
+}
+
+/* الأزرار في الوضع الليلي بدرجات أغمق */
+[data-theme="dark"] .btn-primary {
+  background: #394523;
+  color: #fef6e4;
+  border: 2px solid #526b2a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background: #2b351a;
+  border-color: #789b35;
+  color: #fff;
+}
+
+[data-theme="dark"] .btn-outline {
+  background: #b89628;
+  color: #111625;
+  border: 2px solid #92751d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background: #9c7e1e;
+  border-color: #786014;
+  color: #090d16;
+}
 
 /* ===== إعدادات أساسية ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
