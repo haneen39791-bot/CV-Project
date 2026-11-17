@@ -229,26 +229,34 @@ img { max-width: 100%; }
   border-radius: 8px;
 }
 
-/* الزر الأساسي */
+/* الزر الأساسي (تواصل معي / Contact Me) */
 .btn-primary {
-  background: #789b35;
-  color: white;
+  background: #526b2a;
+  color: #fffbea;
+  border: 2px solid #526b2a;
+  box-shadow: 0 4px 12px rgba(57, 69, 35, 0.2);
 }
 
 .btn-primary:hover {
-  background: #5e7c2a;
+  background: #394523;
+  border-color: #394523;
+  color: #fff;
 }
 
-/* الزر الثانوي */
+/* الزر الثانوي (اعرف المزيد / Learn More) */
 .btn-outline {
-  border: 2px solid #789b35;
-  color: #52652e;
+  background: #f4d75e;
+  color: #394523;
+  border: 2px solid #d6b63d;
+  box-shadow: 0 4px 12px rgba(57, 69, 35, 0.12);
 }
 
 .btn-outline:hover {
-  background: #f4d75e;
-  color: #394523;
+  background: #e6c443;
+  border-color: #c5a32a;
+  color: #262e17;
 }
+
 
 /* إزالة الشريط الملون القديم */
 .hero::after {
