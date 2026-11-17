@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" id="metaDescription" content="الموقع التعريفي لحنين خالد منصور زيد - طالبة علوم حاسب مهتمة بتطوير البرمجيات وتصميم المواقع.">
+  <title>حنين زيد | موقع تعريفي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="القائمة الرئيسية">
+      <button class="nav-toggle" id="navToggle" data-ar-label="فتح القائمة" data-en-label="Open menu" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="#about" data-ar="عنّي" data-en="About">عنّي</a></li>
+        <li><a href="#education" data-ar="التعليم" data-en="Education">التعليم</a></li>
+        <li><a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a></li>
+        <li><a href="#contact" data-ar="تواصل معي" data-en="Contact">تواصل معي</a></li>
+      </ul>
+
+      <div class="lang-switch" aria-label="اللغة / Language">
+        <button class="lang-btn active" data-lang="ar" aria-pressed="true">العربية</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" data-ar-label="تبديل الوضع الليلي" data-en-label="Toggle dark mode" aria-label="تبديل الوضع الليلي">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- قسم الرئيسية -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="greeting" data-ar="مرحباً، أنا" data-en="Hello, I'm">مرحباً، أنا</p>
+          <h1 data-ar="حنين خالد منصور زيد" data-en="Haneen Khaled Mansour Zayed">حنين خالد منصور زيد</h1>
+          <p class="subtitle" data-ar="طالبة <span class='highlight'>علوم حاسب</span> وشغوفة بتطوير البرمجيات وتصميم المواقع" data-en="Computer Science student passionate about <span class='highlight'>software development</span> and web design">طالبة <span class="highlight">علوم حاسب</span> وشغوفة بتطوير البرمجيات وتصميم المواقع</p>
+          <p class="location" data-ar="📍 جدة، المملكة العربية السعودية" data-en="📍 Jeddah, Saudi Arabia">📍 جدة، المملكة العربية السعودية</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+            <a href="#about" class="btn btn-outline" data-ar="اعرف المزيد" data-en="Learn More">اعرف المزيد</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم عنّي -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title" data-ar="نبذة <span>عنّي</span>" data-en="About <span>Me</span>">نبذة <span>عنّي</span></h2>
+        <div class="card about-card">
+          <p data-ar="طالبة علوم حاسب، مهتمة بالتقنية وتطوير البرمجيات وتصميم المواقع. أسعى إلى تطوير مهاراتي في البرمجة واكتساب المعرفة في مجالات الحاسب المختلفة." data-en="Computer Science student interested in technology, software development, and web design. I strive to improve my programming skills and expand my knowledge across different areas of computing.">طالبة علوم حاسب، مهتمة بالتقنية وتطوير البرمجيات وتصميم المواقع. أسعى إلى تطوير مهاراتي في البرمجة واكتساب المعرفة في مجالات الحاسب المختلفة.</p>
+          <div class="info-grid">
+            <div class="info-item" data-ar="<strong>الاسم:</strong> حنين خالد منصور زيد" data-en="<strong>Name:</strong> Haneen Khaled Mansour Zayed"><strong>الاسم:</strong> حنين خالد منصور زيد</div>
+            <div class="info-item" data-ar="<strong>تاريخ الميلاد:</strong> 31 ديسمبر 2006" data-en="<strong>Date of Birth:</strong> December 31, 2006"><strong>تاريخ الميلاد:</strong> 31 ديسمبر 2006</div>
+            <div class="info-item" data-ar="<strong>الجنسية:</strong> يمنية" data-en="<strong>Nationality:</strong> Yemeni"><strong>الجنسية:</strong> يمنية</div>
+            <div class="info-item" data-ar="<strong>التخصص:</strong> علوم الحاسب (Computer Science)" data-en="<strong>Major:</strong> Computer Science"><strong>التخصص:</strong> علوم الحاسب (Computer Science)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التعليم -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title" data-ar="المؤهلات <span>التعليمية</span>" data-en="<span>Education</span>">المؤهلات <span>التعليمية</span></h2>
+        <div class="timeline">
+          <div class="timeline-item card">
+            <div class="timeline-icon">🎓</div>
+            <div>
+              <h3 data-ar="بكالوريوس علوم الحاسب" data-en="Bachelor of Computer Science">بكالوريوس علوم الحاسب</h3>
+              <p class="muted" data-ar="الجامعة الإسلامية بمنيسوتا" data-en="Islamic University of Minnesota">الجامعة الإسلامية بمنيسوتا</p>
+              <span class="badge" data-ar="طالبة جامعية" data-en="Undergraduate Student">طالبة جامعية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-ar="المهارات <span>التقنية</span>" data-en="Technical <span>Skills</span>">المهارات <span>التقنية</span></h2>
+        <div class="skills-grid">
+          <div class="card skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>HTML</h3>
+            <div class="progress"><span style="width: 90%"></span></div>
+          </div>
+          <div class="card skill-card">
+            <div class="skill-icon">#</div>
+            <h3>CSS</h3>
+            <div class="progress"><span style="width: 85%"></span></div>
+          </div>
+          <div class="card skill-card">
+            <div class="skill-icon">☕</div>
+            <h3>Java</h3>
+            <div class="progress"><span style="width: 70%"></span></div>
+          </div>
+          <div class="card skill-card">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <div class="progress"><span style="width: 75%"></span></div>
+          </div>
+          <div class="card skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Microsoft Office</h3>
+            <div class="progress"><span style="width: 80%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم اللغات -->
+    <section class="section section-alt" id="languages">
+      <div class="container">
+        <h2 class="section-title" data-ar="اللغات" data-en="Languages">اللغات</h2>
+        <div class="languages-grid">
+          <div class="card language-card">
+            <h3 data-ar="العربية" data-en="Arabic">العربية</h3>
+            <p class="muted" data-ar="اللغة الأم" data-en="Native language">اللغة الأم</p>
+            <div class="progress"><span style="width: 100%"></span></div>
+          </div>
+          <div class="card language-card">
+            <h3 data-ar="الإنجليزية" data-en="English">الإنجليزية</h3>
+            <p class="muted" data-ar="متوسط" data-en="Intermediate">متوسط</p>
+            <div class="progress"><span style="width: 60%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-ar="تواصل <span>معي</span>" data-en="Contact <span>Me</span>">تواصل <span>معي</span></h2>
+        <div class="contact-grid">
+          <a class="card contact-card" href="mailto:haneen39791@gmail.com">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong>
+              <p>haneen39791@gmail.com</p>
+            </div>
+          </a>
+          <a class="card contact-card" href="tel:0549729397">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong data-ar="رقم التواصل" data-en="Phone Number">رقم التواصل</strong>
+              <p>0549729397</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-ar="© {year} حنين زيد. جميع الحقوق محفوظة." data-en="© {year} Haneen Zayed. All rights reserved.">© حنين زيد. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
