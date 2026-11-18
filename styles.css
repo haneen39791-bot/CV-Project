@@ -481,10 +481,10 @@ img { max-width: 100%; }
 .about-card p { 
   font-size: 1.1rem; 
   color: var(--muted);
-  max-width: 780px;
-  margin-inline: auto;
-  text-align: center;
-  line-height: 1.9;
+  /*max-width: 780px;*/
+  /*margin-inline: auto;*/
+  /*text-align: center;*/
+  /*line-height: 1.9;*/
  }
 
 .info-grid {
