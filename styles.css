@@ -478,7 +478,14 @@ img { max-width: 100%; }
 
 /* ===== عنّي ===== */
 .about-card { padding: 35px; }
-.about-card p { font-size: 1.1rem; color: var(--muted); }
+.about-card p { 
+  font-size: 1.1rem; 
+  color: var(--muted);
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+  line-height: 1.9;
+ }
 
 .info-grid {
   display: grid;
